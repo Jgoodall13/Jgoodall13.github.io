@@ -16,6 +16,10 @@ section {
   background-color: #fafafa;
 }
 
+.app {
+  position: relative;
+}
+
 /* Landing Styles */
 .landing {
   height: 100vh;
@@ -132,8 +136,7 @@ section {
   transition: transform 0.3s ease-in-out;
   text-align: center;
   padding: 50px 20px;
-  max-width: 350px;
-  min-width: 325px;
+  max-width: 325px;
 }
 
 .box-card:hover {
@@ -352,6 +355,14 @@ button:hover {
 
   .projects .projects-grid {
     grid-template-columns: 1fr;
+  }
+  .box-holder {
+    flex-wrap: wrap;
+  }
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 130px;
   }
 }
 
