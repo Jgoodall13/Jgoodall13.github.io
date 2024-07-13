@@ -1,4 +1,12 @@
 import overture from "../images/overture.png";
+import coreswag from "../images/coreswag.png";
+import rusvm from "../images/rsuvm.png";
+import bluetique from "../images/bluetique.png";
+import dd from "../images/dd.png";
+import nielsen from "../images/nielsen.png";
+import acu from "../images/acu.png";
+import erm from "../images/ERM.png";
+import sikich from "../images/sikich.png";
 
 const Projects = () => {
   const projectList = [
@@ -10,34 +18,52 @@ const Projects = () => {
       link: "https://www.overturepromotions.com/",
     },
     {
-      image: "project-image.jpg",
-      title: "Project Title",
-      description: "Project description...",
-      link: "project-link",
+      image: coreswag,
+      title: "CoreSwag",
+      description: "Site built with .NET and C#",
+      link: "https://coreswag.overturestore.com/",
     },
     {
-      image: "project-image.jpg",
-      title: "Project Title",
-      description: "Project description...",
-      link: "project-link",
+      image: rusvm,
+      title: "Ross University",
+      description: "Site built with .NET and C#",
+      link: "https://rusvm.overturestore.com/",
     },
     {
-      image: "project-image.jpg",
-      title: "Project Title",
-      description: "Project description...",
-      link: "project-link",
+      image: bluetique,
+      title: "BCBS",
+      description: "Site built with .NET and C#",
+      link: "https://bluetique.overturestore.com/",
     },
     {
-      image: "project-image.jpg",
-      title: "Project Title",
+      image: dd,
+      title: "DoorDash",
       description: "Project description...",
-      link: "project-link",
+      link: "https://doordashstore.com/",
     },
     {
-      image: "project-image.jpg",
-      title: "Project Title",
+      image: nielsen,
+      title: "Nielsen",
       description: "Project description...",
-      link: "project-link",
+      link: "https://nielsen.overturestore.com/",
+    },
+    {
+      image: acu,
+      title: "ACU Med",
+      description: "Project description...",
+      link: "https://aucmed.overturestore.com/",
+    },
+    {
+      image: erm,
+      title: "ERM",
+      description: "Project description...",
+      link: "https://erm.overturestore.com/",
+    },
+    {
+      image: sikich,
+      title: "Sikich",
+      description: "Project description...",
+      link: "https://sikichshowroom.overtureshops.com/pages/pastprojects",
     },
   ];
 
@@ -51,7 +77,6 @@ const Projects = () => {
               <img src={project.image} alt={project.title} />
               <div className="project-overlay">
                 <h3>{project.title}</h3>
-                <p>{project.description}</p>
                 <a href={project.link} target="blank" className="btn">
                   View Site
                 </a>

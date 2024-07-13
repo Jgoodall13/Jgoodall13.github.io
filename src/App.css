@@ -12,6 +12,10 @@ body {
   margin: auto;
 }
 
+section {
+  background-color: #fafafa;
+}
+
 /* Landing Styles */
 .landing {
   height: 100vh;
@@ -35,7 +39,9 @@ body {
 
 .landing p {
   font-family: "Source Code Pro", monospace;
-  font-size: 40px;
+  font-size: 44px;
+  font-weight: 700;
+  margin-top: -45px;
 }
 
 .arrow-container {
@@ -69,8 +75,7 @@ body {
 }
 
 .header h1 {
-  font-family: "Style Script", cursive;
-  color: #fff;
+  color: transparent;
 }
 
 .header.scrolled {
@@ -91,6 +96,10 @@ body {
 .header nav ul li a {
   text-decoration: none;
   color: #fff;
+}
+
+.header nav ul li a:hover {
+  color: green !important;
 }
 
 .header.scrolled h1 {
@@ -119,18 +128,49 @@ body {
 }
 
 .box-card {
-  border: 1px solid lightgrey;
   box-shadow: 0px 10px 18px -6px rgba(0, 0, 0, 0.75);
   transition: transform 0.3s ease-in-out;
+  text-align: center;
+  padding: 50px 20px;
+  max-width: 350px;
+  min-width: 325px;
 }
 
 .box-card:hover {
   transform: translateY(-10px);
 }
 
+.card-title {
+  font-size: 22px;
+}
+
+.bold-green {
+  color: green;
+  font-weight: 700;
+  margin: 0;
+}
+
+.sm-margin-top {
+  margin-top: 5px;
+}
+
+.bg-margin-bottom {
+  margin-bottom: 50px;
+}
+
+.tools {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 6px;
+}
+
+.tools li {
+  margin: 10px;
+}
+
 /* Projects Section Styles */
 .projects {
-  padding: 5rem 0;
+  padding: 10rem 0;
   text-align: center;
 }
 
@@ -138,6 +178,11 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 1rem;
+}
+
+.projects h2 {
+  font-size: 44px;
+  margin-bottom: 75px;
 }
 
 .projects .project-card {
@@ -163,7 +208,7 @@ body {
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 20, 0, 0.8);
   opacity: 0;
   transition: 250ms;
   color: #fff;
@@ -171,6 +216,11 @@ body {
 
 .projects .project-card:hover .project-overlay {
   opacity: 1;
+}
+
+.project-overlay h3 {
+  font-weight: 700;
+  font-size: 24px;
 }
 
 .project-overlay a {
@@ -181,61 +231,113 @@ body {
   padding: 5px 20px;
 }
 
+.project-overlay p {
+  margin-bottom: 85px;
+}
+
 .project-overlay a:hover {
   background: #fff;
   color: #0f172a;
 }
 
 /* Contact Section Styles */
-.contact {
-  padding: 5rem 0;
-  background: #f4f4f4;
-  text-align: center;
-}
+/* Form Styles */
 
-.contact .contact-form {
+.contact {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 100px;
 }
 
-.contact .contact-form input,
-.contact .contact-form textarea {
-  width: 100%;
-  max-width: 500px;
-  padding: 1rem;
-  margin-bottom: 1rem;
-  border: 1px solid #ddd;
-  border-radius: 5px;
+.contact h2 {
+  font-size: 44px;
+  margin-bottom: 75px;
 }
 
-.contact .contact-form .btn {
-  background: #3498db;
-  color: #fff;
-  padding: 0.7rem 1.5rem;
+.top-form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  padding: 12px;
   border: none;
-  border-radius: 5px;
-  cursor: pointer;
+  border-bottom: 2px solid #eee;
+  background-color: #fafafa;
+  font-size: 16px;
+  transition: border-color 0.3s;
+  width: 200px;
 }
 
-.contact .social-links a {
-  margin: 0 0.5rem;
-  color: #3498db;
-  text-decoration: none;
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  border-color: #000;
+  outline: none;
+}
+
+textarea {
+  width: 100%;
+}
+
+button {
+  padding: 12px 20px;
+  border: none;
+  background: #0f172a;
+  display: block;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+  margin: auto;
+}
+
+button:hover {
+  background: green;
+}
+
+.contact-box {
+  text-align: center;
+}
+
+.contact-box p {
+  margin-bottom: 25px;
 }
 
 /* Footer Styles */
 .footer {
-  background: #333;
+  background: #0f172a;
   color: #fff;
   text-align: center;
   padding: 1rem 0;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer .footer-nav a {
   margin-left: 1rem;
   text-decoration: none;
   color: #fff;
+}
+
+.social-icons svg {
+  font-size: 3em;
+  color: green;
+  margin: 25px;
 }
 
 @media (max-width: 768px) {
@@ -250,5 +352,22 @@ body {
 
   .projects .projects-grid {
     grid-template-columns: 1fr;
+  }
+}
+
+/* Responsive Styles */
+@media (max-width: 480px) {
+  .App {
+    padding: 20px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    font-size: 14px;
+  }
+
+  button {
+    font-size: 14px;
   }
 }

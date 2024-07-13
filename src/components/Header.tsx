@@ -22,7 +22,7 @@ const Header: React.FC = () => {
   return (
     <header className={scrolled ? "header scrolled" : "header"}>
       <div className="container">
-        <h1>jrg</h1>
+        <h1>Jacob Goodall</h1>
         <nav>
           <ul style={{ width: "100%" }}>
             <li>
