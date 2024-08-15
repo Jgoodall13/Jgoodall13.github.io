@@ -5,7 +5,7 @@ const Footer = () => {
         <div className="columns is-centered">
           <div className="column is-one-third">
             <h1 className="title is-size-4-touch has-text-weight-normal">
-              no regrets and everybody wang chung tonight
+              the weeds are high where corn don't grow
             </h1>
           </div>
         </div>
