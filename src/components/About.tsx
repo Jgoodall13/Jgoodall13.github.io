@@ -44,8 +44,8 @@ const About = () => {
               <ul className="tools">
                 <li>HTML/CSS</li>
                 <li>Javascript</li>
+                <li>TypeScript</li>
                 <li>React</li>
-                <li>.NET</li>
                 <li>Figma</li>
               </ul>
             </div>
@@ -70,11 +70,11 @@ const About = () => {
               </p>
               <p className="bold-green">Languagues and Tools:</p>
               <ul className="tools">
-                <li>NodeJS</li>
-                <li>C#</li>
+                <li>Node.js</li>
+                <li>Python</li>
                 <li>MongoDB</li>
+                <li>PostgreSQL</li>
                 <li>AWS</li>
-                <li>Heroku</li>
               </ul>
             </div>
             <div className="box-card">
