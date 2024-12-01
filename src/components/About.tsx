@@ -46,6 +46,7 @@ const About = () => {
                 <li>Javascript</li>
                 <li>TypeScript</li>
                 <li>React</li>
+                <li>TailWind</li>
                 <li>Figma</li>
               </ul>
             </div>
@@ -71,6 +72,7 @@ const About = () => {
               <p className="bold-green">Languagues and Tools:</p>
               <ul className="tools">
                 <li>Node.js</li>
+                <li>Express</li>
                 <li>Python</li>
                 <li>MongoDB</li>
                 <li>PostgreSQL</li>
