@@ -445,10 +445,33 @@ h5 {
   .box-holder {
     flex-wrap: wrap;
   }
-  input[type="text"],
-  input[type="email"],
-  textarea {
-    width: 130px;
+  .form-container {
+    grid-template-columns: 1fr !important;
+  }
+  .header nav ul {
+    flex-direction: column;
+  }
+  .contact .left-form h2 {
+    padding: 0;
+    font-size: 35px;
+    text-align: center;
+  }
+  .contact-box {
+    padding: 0;
+  }
+  form#contact-form {
+    width: 100%;
+    margin-left: 0;
+    transform: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 50px 0;
+  }
+  .landing p {
+    line-height: 1;
+    margin-top: 20px;
+  }
+  .landing h1 {
+    line-height: 1;
   }
 }
 

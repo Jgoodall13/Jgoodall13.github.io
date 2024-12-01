@@ -25,13 +25,16 @@ const Contact: React.FC = () => {
     setError(null); // Reset error state
 
     try {
-      const response = await fetch("http://localhost:3000/sendemail", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(emailData),
-      });
+      const response = await fetch(
+        "https://ts-node-express-3b23e7f144da.herokuapp.com/",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(emailData),
+        }
+      );
 
       if (!response.ok) {
         throw new Error(`Error: ${response.statusText}`);
