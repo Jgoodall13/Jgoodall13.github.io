@@ -26,7 +26,7 @@ const Contact: React.FC = () => {
 
     try {
       const response = await fetch(
-        "https://ts-node-express-3b23e7f144da.herokuapp.com/",
+        "https://ts-node-express-3b23e7f144da.herokuapp.com/sendemail",
         {
           method: "POST",
           headers: {
@@ -78,7 +78,7 @@ const Contact: React.FC = () => {
         <div className="form-container">
           <div className="left-form">
             <h2>
-              Let's Chat.
+              Let's chat.
               <br />
               Tell me about your project.
             </h2>
