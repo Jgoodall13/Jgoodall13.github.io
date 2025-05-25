@@ -72,8 +72,8 @@ const About = () => {
               <p className="bold-green">Languagues and Tools:</p>
               <ul className="tools">
                 <li>Node.js</li>
-                <li>Express</li>
-                <li>Python</li>
+                <li>ASP.NET</li>
+                <li>C#</li>
                 <li>MongoDB</li>
                 <li>PostgreSQL</li>
                 <li>AWS</li>
